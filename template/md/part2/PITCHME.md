@@ -44,7 +44,3 @@ public class EchoServiceImpl implements EchoService {
 		proxyBuilder.init(new DataCenterServiceConsumerCodec(), "dc_proxy_office", 1, false);
 		EchoService echoService = proxyBuilder.buildProxy(EchoService.class, "1.0.0", "default");
 ```
-
-@snapend
-
-
