@@ -37,17 +37,14 @@ public class EchoServiceImpl implements EchoService {
 @title[与现有服务框架的异同]
 
 @snap[north text-white span-100]
-@size[1.5em](与现有服务框架的异同)
+@size[1.5em](服务调用者)
 @snapend
+```
+	ProxyBuilder proxyBuilder = new ProxyBuilder();
+		proxyBuilder.init(new DataCenterServiceConsumerCodec(), "dc_proxy_office", 1, false);
+		EchoService echoService = proxyBuilder.buildProxy(EchoService.class, "1.0.0", "default");
+```
 
-@snap[south span-100]
-@ol[bullet-green](false)
-- 不再强依赖一个中心节点
-- 更加灵活的路由、负载均衡策略（全都集中在客户端）
-- 更加完善的服务治理工具
-- 更加强悍的插件化功能
-@olend
-<br><br>
 @snapend
 
 
