@@ -11,8 +11,7 @@
 @snap[north text-white span-100]
 @size[1.5em](依赖)
 @snapend
-
-@snap[south span-100]
+<br><br>
 ```
 <dependency>
   <groupId>fm.lizhi.commons</groupId>
@@ -20,7 +19,6 @@
   <version>1.0.0-SNAPSHOT</version>
 </dependency>
 ```
-@snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[dubbo的架构]
