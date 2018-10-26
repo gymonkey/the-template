@@ -21,21 +21,9 @@ Dubbo<br>*在荔枝的应用*
 
 ---
 
----?include=template/md/split-screen/PITCHME.md
+---?include=template/md/part1/PITCHME.md
 
----?include=template/md/sidebar/PITCHME.md
-
----?include=template/md/list-content/PITCHME.md
-
----?include=template/md/image/PITCHME.md
-
----?include=template/md/sidebox/PITCHME.md
-
----?include=template/md/code-presenting/PITCHME.md
-
----?include=template/md/header-footer/PITCHME.md
-
----?include=template/md/quotation/PITCHME.md
+---?include=template/md/part2/PITCHME.md
 
 ---?include=template/md/announcement/PITCHME.md
 
