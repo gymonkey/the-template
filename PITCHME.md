@@ -20,12 +20,6 @@ Dubbo<br>*在荔枝的应用*
 
 
 ---
-@title[Tip! Fullscreen]
-
-![TIP](template/img/tip.png)
-<br>
-For the best viewing experience, press F for fullscreen.
-@css[template-note](We recommend using the *SPACE* key to navigate between slides.)
 
 ---?include=template/md/split-screen/PITCHME.md
 
