@@ -24,14 +24,13 @@
 @title[dubbo的架构]
 
 @snap[north text-white span-100]
-@size[1.5em](dubbo的架构)
+@size[1.5em](服务提供者)
 @snapend
 
 @snap[south span-100]
-![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwdp9x22o7j30ci08cdg2.jpg)
-<br></br>
+启动类与现在对比，没有改动会默认使用lz-dubbo-config配置，加载默认配置，如果有必要可以启动参数-Ddubbo.config.key来修改配置,可以通过在ServiceProvider注解指定version和group的值，否则使用1.0.0和default作为默认值
 @snapend
-
+---?gist=gymonkey/39c5a4bcf637bfecf74a9e597cb2a490&lang=java&color=white&title=%E6%8F%90%E4%BE%9B%E8%80%85%E4%BE%8B%E5%AD%90
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[与现有服务框架的异同]
 
