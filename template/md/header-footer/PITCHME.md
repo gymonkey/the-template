@@ -26,7 +26,7 @@
 
 @snap[north span-100]
 <br>
-![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwdp9x22o7j30ci08cdg2.jpg)
+![](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fwlp19ra7vj30tg0mw74f.jpg)
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
