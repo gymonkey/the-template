@@ -7,14 +7,15 @@ Dubbo<br>*在荔枝的应用*
 ---
 @title[Slide Markdown]
 
-### Each slide in this presentation is provided as a *template*.
+### 整个分享会分为以下几个部分 
 
 <br><br>
 
-1. Select only the slide templates that you need.
-1. Customize the template _markdown content_.
-1. Optionally, override template _styles_ and _settings_.
-1. Then present and publish with GitPitch @fa[smile-o]
+1. dubbo的基础介绍，与现在服务框架区别 
+1. 改造后dubbo的使用
+1. 我们对dubbo的做了哪些改造
+1. 后续的开发工作
+1. Q&A
 <br><br>
 
 
