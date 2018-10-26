@@ -18,18 +18,6 @@
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[Header Bar + Image Body]
-
-@snap[north text-white span-100]
-@size[1.5em](dubbo的架构)
-@snapend
-
-@snap[south span-100]
-![](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fwlp19ra7vj30tg0mw74f.jpg)
-<br><br>
-@snapend
-
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[dubbo的架构]
 
 @snap[north text-white span-100]
@@ -37,7 +25,7 @@
 @snapend
 
 @snap[south span-100]
-![](http://wx1.sinaimg.cn/mw690/0060lm7Tly1fwlp19ra7vj30tg0mw74f.jpg)
+![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwdp9x22o7j30ci08cdg2.jpg)
 <br></br>
 @snapend
 
