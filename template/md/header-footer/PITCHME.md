@@ -20,7 +20,7 @@
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[dubbo的架构]
 
-@snap[south text-white span-100]
+@snap[north text-white span-100]
 @size[1.5em](dubbo的架构)
 @snapend
 
