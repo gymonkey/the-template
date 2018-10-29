@@ -46,3 +46,18 @@ public class EchoServiceImpl implements EchoService {
 		EchoService echoService = proxyBuilder.buildProxy(
             EchoService.class, "1.0.0", "default");
 ```
+
++++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
+@title[配置]
+
+@snap[north text-white span-100]
+@size[1.5em](配置)
+@snapend
+
+| 配置项 | 作用 |
+|----------|----------|
+|dubbo.reference.retries|调用重试次数|
+|dubbo.reference.connections|与服务提供者的连接数|
+|dubbo.reference.loadbalance|负载均衡策略|
+|dubbo.protocol.threads|服务提供者线程数|
+|dubbo.protocol.iothreads|io线程数|
