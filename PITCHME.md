@@ -25,13 +25,11 @@ Dubbo<br>*在荔枝的应用*
 
 ---?include=template/md/part3/PITCHME.md
 
+---?include=template/md/part4/PITCHME.md
+
 ---
-@title[The Template Docs]
 
 @snap[west headline span-100]
-GitPitch<br>*The Template @css[text-orange](End) ;)*
+Q&A
 @snapend
 
-@snap[south docslink span-100]
-For supporting documentation see the [The Template Docs](https://gitpitch.com/docs/the-template)
-@snapend
