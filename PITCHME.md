@@ -29,7 +29,4 @@ Dubbo<br>*在荔枝的应用*
 
 ---
 
-@snap[west headline span-100]
-Q&A
-@snapend
-
+## @color[black](Q&A)
