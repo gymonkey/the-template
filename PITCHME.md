@@ -23,11 +23,7 @@ Dubbo<br>*在荔枝的应用*
 
 ---?include=template/md/part2/PITCHME.md
 
----?include=template/md/announcement/PITCHME.md
-
----?include=template/md/about/PITCHME.md
-
----?include=template/md/wrap-up/PITCHME.md
+---?include=template/md/part3/PITCHME.md
 
 ---
 @title[The Template Docs]
