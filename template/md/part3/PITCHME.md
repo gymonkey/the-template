@@ -25,7 +25,7 @@
 @title[与现有服务框架的异同]
 
 @snap[north text-white span-100]
-@size[1.5em](兼容domain-op调用和现有的filter机制，使用guice作为ioc容器)
+@size[1.5em](兼容现有机制和灰度)
 @snapend
 
 @snap[south span-100]
@@ -33,8 +33,6 @@
 - config 配置层：封装获取默认配置，自定义配置的覆盖(LzDubboConfigLoader)
 - proxy 服务代理层：兼容基于domain-op的调用方式（LzDubboProxyFactory）
 - protocol 远程调用层：兼容现有的filter机制（LzDubboProtocol）
-- transport 网络传输层：兼容目前domain-op的调用方式，传输domain、op、request-response的protobuf对象（LzDubboTransporter）
-- container 容器层：兼容guice容器（LzDubboContainer）
 @olend
 <br><br>
 @snapend
@@ -42,11 +40,13 @@
 @title[配置]
 
 @snap[north text-white span-100]
-@size[1.5em](灰度调用)
+@size[1.5em](兼容现有机制和灰度)
 @snapend
 
 @snap[south span-100]
 @ol[bullet-green](false)
+- transport 网络传输层：兼容目前domain-op的调用方式，传输domain、op、request-response的protobuf对象（LzDubboTransporter）
+- container 容器层：兼容guice容器（LzDubboContainer）
 - registry 注册中心层：记录已提供的dubbo服务（LzDubboRegisty）
 @olend
 <br><br>
