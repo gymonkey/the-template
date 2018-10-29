@@ -53,7 +53,7 @@ public class EchoServiceImpl implements EchoService {
 @snap[north text-white span-100]
 @size[1.5em](配置)
 @snapend
-
+<br>
 | 配置项 | 作用 |
 |----------|----------|
 |dubbo.reference.retries|调用重试次数|
@@ -61,3 +61,15 @@ public class EchoServiceImpl implements EchoService {
 |dubbo.reference.loadbalance|负载均衡策略|
 |dubbo.protocol.threads|服务提供者线程数|
 |dubbo.protocol.iothreads|io线程数|
+
++++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
+@title[扩展点]
+
+@snap[north text-white span-100]
+@size[1.5em](扩展点)
+@snapend
+<br>
+|扩展点|用途|
+|---|----|
+|RouterFactory|从多个服务提者方中选择一个进行调用|
+|LoadBalance|从多个服务提者方中选择一个进行调用|
