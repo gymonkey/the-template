@@ -15,7 +15,7 @@
 @snap[south span-100]
 @ol[bullet-green](false)
 - 兼容k8s容器化改造
-- 做减法，减少现在的利用的扩展点
+- 做减法，减少现在用作兼容改造扩展点
 - 补充完善更多的testcase，方便后续的dubbo核心升级
 - 开放更多的扩展点
 @olend
