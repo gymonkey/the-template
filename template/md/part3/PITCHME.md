@@ -25,39 +25,29 @@
 @title[与现有服务框架的异同]
 
 @snap[north text-white span-100]
-@size[1.5em](服务调用者)
+@size[1.5em](兼容domain-op调用和现有的filter机制，使用guice作为ioc容器)
 @snapend
-```
-	ProxyBuilder proxyBuilder = new ProxyBuilder();
-		proxyBuilder.init(new DataCenterServiceConsumerCodec(), 
-            "dc_proxy_office", 1, false);
-		EchoService echoService = proxyBuilder.buildProxy(
-            EchoService.class, "1.0.0", "default");
-```
 
+@snap[south span-100]
+@ol[bullet-green](false)
+- config 配置层：封装获取默认配置，自定义配置的覆盖(LzDubboConfigLoader)
+- proxy 服务代理层：兼容基于domain-op的调用方式（LzDubboProxyFactory）
+- protocol 远程调用层：兼容现有的filter机制（LzDubboProtocol）
+- transport 网络传输层：兼容目前domain-op的调用方式，传输domain、op、request-response的protobuf对象（LzDubboTransporter）
+- container 容器层：兼容guice容器（LzDubboContainer）
+@olend
+<br><br>
+@snapend
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[配置]
 
 @snap[north text-white span-100]
-@size[1.5em](配置)
+@size[1.5em](灰度调用)
 @snapend
 
-| 配置项 | 作用 |
-|----------|----------|
-|dubbo.reference.retries|调用重试次数|
-|dubbo.reference.connections|与服务提供者的连接数|
-|dubbo.reference.loadbalance|负载均衡策略|
-|dubbo.protocol.threads|服务提供者线程数|
-|dubbo.protocol.iothreads|io线程数|
-
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[扩展点]
-
-@snap[north text-white span-100]
-@size[1.5em](扩展点)
+@snap[south span-100]
+@ol[bullet-green](false)
+- registry 注册中心层：记录已提供的dubbo服务（LzDubboRegisty）
+@olend
+<br><br>
 @snapend
-
-|扩展点|用途|
-|---|----|
-|RouterFactory|从多个服务提者方中选择一个进行调用|
-|LoadBalance|从多个服务提者方中选择一个进行调用|
