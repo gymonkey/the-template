@@ -53,7 +53,6 @@ public class EchoServiceImpl implements EchoService {
 @snap[north text-white span-100]
 @size[1.5em](配置)
 @snapend
-<br>
 | 配置项 | 作用 |
 |----------|----------|
 |dubbo.reference.retries|调用重试次数|
@@ -68,7 +67,6 @@ public class EchoServiceImpl implements EchoService {
 @snap[north text-white span-100]
 @size[1.5em](扩展点)
 @snapend
-<br>
 |扩展点|用途|
 |---|----|
 |RouterFactory|从多个服务提者方中选择一个进行调用|
