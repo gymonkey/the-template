@@ -17,17 +17,9 @@
 <br><br>
 @snapend
 
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[我们对dubbo的改造]
-
-@snap[north text-white span-100]
-@size[1.5em](我们对dubbo的改造)
-@snapend
-
-@snap[south span-100]
++++
 ![](http://wx2.sinaimg.cn/mw690/0060lm7Tly1fwdkup8d7yj30p00iqjx2.jpg)
 <br><br>
-@snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[与现有服务框架的异同]
