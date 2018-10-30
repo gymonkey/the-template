@@ -1,3 +1,4 @@
+---?image=template/img/bg/b1.png
 @title[Dubbo]
 
 @snap[west headline text-black span-70]
