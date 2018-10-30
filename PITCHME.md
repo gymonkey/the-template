@@ -29,4 +29,7 @@ Dubbo<br>*在荔枝的应用*
 ---?include=template/md/part4/PITCHME.md
 
 ---?image=template/img/bg/b1.png
-## @color[white](Q&A)
+@snap[headline text-white span-70]
+Q&A
+@snapend
+
