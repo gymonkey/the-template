@@ -1,7 +1,7 @@
 ---?image=template/img/bg/b1.png
 @title[Dubbo]
 
-@snap[west headline text-black span-70]
+@snap[west headline text-white span-70]
 Dubbo<br>*在荔枝的应用*
 @snapend
 
@@ -28,6 +28,5 @@ Dubbo<br>*在荔枝的应用*
 
 ---?include=template/md/part4/PITCHME.md
 
----
-
-## @color[black](Q&A)
+---?image=template/img/bg/b1.png
+## @color[white](Q&A)
