@@ -34,5 +34,5 @@ Q&A
 @snapend
 
 ---?image=template/img/bg/b1.png
-![](http://wx4.sinaimg.cn/mw690/0060lm7Tly1fwrfmcnbs4j30ku0zktac.jpeg)
+![](http://wx2.sinaimg.cn/mw690/0060lm7Tly1fwrfpj5wg1j308r0a8gnu.jpg)
 
