@@ -25,4 +25,7 @@
 
 ---?include=template/md/part3/PITCHME.md
 
----?image=template/img/bg/b1.png @snap[headline text-white span-70] Q&A @snapend
+---?image=template/img/bg/b1.png
+@snap[headline text-white span-70]
+Q&A
+@snapend
