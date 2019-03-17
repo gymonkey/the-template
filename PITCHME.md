@@ -2,7 +2,7 @@
 @title[Dubbo]
 
 @snap[west headline text-white span-70]
-荔枝服务端架构
+服务端架构
 @snapend
 
 ---
