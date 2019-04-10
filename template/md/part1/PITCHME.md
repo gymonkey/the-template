@@ -14,6 +14,7 @@
 
 @snap[south span-100]
 app_sync在升级之后时不时会出现调用超时，<br>增加gc日志和相应的安全点日志后，发现有可疑日志
+<br>
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
@@ -24,6 +25,8 @@ app_sync在升级之后时不时会出现调用超时，<br>增加gc日志和相
 @snapend
 @snap[south span-100]
 CAT的心跳操作?
+<br>
+<br>
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
