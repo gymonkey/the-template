@@ -13,11 +13,7 @@
 @snapend
 
 @snap[south span-100]
-app_sync在升级之后时不时会出现调用超时，增加gc日志和相应的安全点日志后，发现有如下日志
-```
-2018-12-10T10:13:13.911+0800: 848743.080: Total time for which application threads were stopped: 14.3280490 seconds
-848728.750: ThreadDump                       [    2817          0              3    ]      [     0     0     0     8 14318    ]  0
-```
+app_sync在升级之后时不时会出现调用超时，<br>增加gc日志和相应的安全点日志后，发现有可疑日志
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
