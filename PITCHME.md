@@ -2,19 +2,19 @@
 @title[Dubbo]
 
 @snap[west headline text-white span-70]
-服务端架构
+Dubbo升级过程中<br>遇到的问题
 @snapend
 
 ---
 @title[Slide Markdown]
 
-### 整个分享会分为以下几个部分 
+### 分享主要分成下面几个部分 
 
 <br><br>
 
-1. 我们使用的技术栈
-1. 我们的技术架构 
-1. 我们的业务架构
+1. 奇怪的ThreadDump 
+1. 超长的STW 
+1. 半连接的问题 
 1. Q&A
 <br><br>
 
