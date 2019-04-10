@@ -46,7 +46,6 @@ Close old netty channe xxxxx on create new netty channel xxx
 @size[1.5em](猜想和排查)
 @snapend
 
-@snap[span-100]
 ```
 192.168.80.111.34764 > 192.168.80.101.29394: Flags [S]
 192.168.80.101.29394 > 192.168.80.111.34764: Flags [S.]
@@ -58,7 +57,6 @@ Close old netty channe xxxxx on create new netty channel xxx
 192.168.80.111.34764 > 192.168.80.101.29394: Flags [.]
 192.168.80.101.29394 > 192.168.80.111.34764: Flags [R]
 ```
-@snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[半连接]
