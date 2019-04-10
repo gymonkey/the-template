@@ -2,7 +2,7 @@
 @title[Dubbo]
 
 @snap[west headline text-white span-70]
-Dubbo升级过程中<br>遇到的问题
+Dubbo升级中<br>遇到的问题
 @snapend
 
 
