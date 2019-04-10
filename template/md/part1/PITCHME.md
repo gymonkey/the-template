@@ -12,10 +12,8 @@
 @size[1.5em](现象)
 @snapend
 
-@snap[south span-100]
-```
+@snap[span-100]
 app_sync在升级之后时不时会出现调用超时，增加gc日志和相应的安全点日志后，发现有可疑日志
-```
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
@@ -25,7 +23,7 @@ app_sync在升级之后时不时会出现调用超时，增加gc日志和相应�
 @size[1.5em](猜想和解决)
 @snapend
 
-@snap[south span-100]
+@snap[span-100]
 CAT的心跳操作?
 @snapend
 
@@ -36,7 +34,7 @@ CAT的心跳操作?
 @size[1.5em](猜想和解决)
 @snapend
 
-@snap[south span-100]
+@snap[span-100]
 刘伟提醒的dubbo线程池会有自动dump线程的操作，排查后发现就是这个原因引起
 @snapend
 
@@ -47,7 +45,7 @@ CAT的心跳操作?
 @size[1.5em](猜想和解决)
 @snapend
 
-@snap[south span-100]
+@snap[span-100]
 Dubbo调用端为什么使用到线程池？
 @snapend
 
