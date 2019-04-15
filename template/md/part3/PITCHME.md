@@ -38,8 +38,12 @@ Close old netty channe xxxxx on create new netty channel xxx
 @snapend
 
 @snap[span-100]
-可以看到对于客户端来说连接很快就建立起来，但是服务端经过两次最后一个ack重传后依然没办法把连接建立起来（次数是由net.ipv4.tcp_synack_retries 选项决定的），查看所有的相关的网络参数net.core.somaxconn = 262144，net.ipv4.tcp_max_syn_backlog=262144,net.ipv4.tcp_syncookies都已经重新设置成比较大的值
+防火墙<br>
+net.core.somaxconn<br>
+net.ipv4.tcp_max_syn_backlog<br>
+net.ipv4.tcp_syncookies<br>
 @snapend
+
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[半连接]
@@ -50,12 +54,6 @@ Close old netty channe xxxxx on create new netty channel xxx
 
 @snap[span-100]
 大杀器 systemptap
-@snapend
-
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@snap[south span-100]
-![](http://wx2.sinaimg.cn/large/0060lm7Tly1g1xkrm4o6hj30dn0a5dh8.jpg)
-<br><br>
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
