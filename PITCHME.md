@@ -2,7 +2,7 @@
 @title[Dubbo]
 
 @snap[west headline text-white span-70]
-Dubbo升级中<br>遇到的问题
+长肥网络中<br>的数据传输
 @snapend
 
 
@@ -13,9 +13,9 @@ Dubbo升级中<br>遇到的问题
 
 <br><br>
 
-1. 奇怪的ThreadDump 
-1. 超长的STW 
-1. 半连接的问题 
+1. 什么是长肥网络 
+2. TCP在长肥网络下的传输
+3. 一种可能的替代-KCP协议 
 1. Q&A
 <br><br>
 
