@@ -2,7 +2,7 @@
 @title[Dubbo]
 
 @snap[west headline text-white span-70]
-长肥网络中<br>的数据传输
+长肥网络中的数据传输
 @snapend
 
 
