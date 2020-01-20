@@ -14,28 +14,31 @@
 ![](https://s2.ax1x.com/2020/01/16/lvyKfS.png)
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
+@title[TCP在长肥网络下的传输]
 
 @snap[north text-white span-100]
-@size[1.5em](排查过程)
+@size[1.5em](测试的拓扑结构)
 @snapend
 
 @snap[span-100]
-日志打印出现大概3s的延时，一般对于这种日志卡顿的情况都会怀疑stw的问题，打开安全点日志和gc日志，发现出现问题前后，有可疑日志
+```
+    ALI_BJ   <----- 公网（100Mb/s，几乎没有丢包，rtt：80ms）------->    ALI_SG
+```
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
+@title[TCP在长肥网络下的传输]
 
 @snap[north text-white span-100]
-@size[1.5em](排查过程)
+@size[1.5em](测试场景)
 @snapend
 
 @snap[span-100]
-开始时间戳(t1)-><br/>
-进行一些判断，添加标记->记录spin开始时间(t2)，自旋等待所有线程响应安全点-><br/>
-记录spin结束时间(t3)，打印spin使用时间(t3-t2)-><br>
-阻塞等待所有线程停止，记录时间戳（t4），打印block花费时间(t4-t3)，打印sync花费时间(t4-t1)
+### 测试场景
+- 使用netty实现一个简单的echo-server和echo-client
+- 拥塞算法使用cubic
+- 尽量保证请求和响应贴近传输时间
+- 观察当时发送时的带宽
 @snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
