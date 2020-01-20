@@ -21,7 +21,7 @@
 @snapend
 
 ```
-    ALI_BJ   <-- 公网（100Mb/s，几乎没有丢包，rtt：80ms）--->    ALI_SG
+ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 ```
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
