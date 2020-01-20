@@ -78,14 +78,26 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 1578451603306 sent_packets:0 in_flight:61 cwnd:77
 1578451603306 sent_packets:0 in_flight:61 cwnd:77
 1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603306 sent_packets:0 in_flight:61 cwnd:77
-1578451603307 sent_packets:0 in_flight:61 cwnd:77
+```
+
++++?
+
+### 在拥塞窗口和滑动窗口的都很充足的情况下，居然出现了没有数据发送的情况！
+
++++?
+
+![](https://s2.ax1x.com/2020/01/16/lv7ITU.png)
+
++++?
+### 会不会是这个发送缓冲区没有新数据“喂”给协议栈，导致了没有新的数据可以发送出去？
+
++++?
+
+```
+channel.writeAndFlush(req).addListener(new ChannelFutureListener() {
+	@Override
+	public void operationComplete(ChannelFuture future) throws Exception {
+		logger.info(String.valueOf(System.currentTimeMillis() - req.getTimestamp()));
+	}
+});
 ```
