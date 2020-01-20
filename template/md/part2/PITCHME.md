@@ -94,10 +94,10 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 +++?
 
 ```
-channel.writeAndFlush(req).addListener(new ChannelFutureListener() {
+channel.writeAndFlush().addListener(ChannelFutureListener() {
 	@Override
-	public void operationComplete(ChannelFuture future) throws Exception {
-		logger.info(String.valueOf(System.currentTimeMillis() - req.getTimestamp()));
+	public void operationComplete(ChannelFuture future) {
+		logger.info(now - sent_time);
 	}
 });
 ```
