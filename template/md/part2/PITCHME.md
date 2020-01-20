@@ -61,10 +61,31 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 
 *tcpdump*
 ```
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x6379 (correct), seq 19393521:19394981, ack 19315231, win 64240, length 1460
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x5dc5 (correct), seq 19394981:19396441, ack 19315231, win 64240, length 1460
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x0bf9 (correct), seq 19396441:19397901, ack 19315231, win 64240, length 1460
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x525d (correct), seq 19397901:19399361, ack 19315231, win 64240, length 1460
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x4ca9 (correct), seq 19399361:19400821, ack 19315231, win 64240, length 1460
-    112.126.56.67.29394 > 172.21.108.90.46562: Flags [.], cksum 0x46f5 (correct), seq 19400821:19402281, ack 19315231, win 64240, length 1460
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+    112.126.56.67.29394 > 172.21.108.90.46562: win 64240
+```
+
++++?
+*systemtap*
+```
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603306 sent_packets:0 in_flight:61 cwnd:77
+1578451603307 sent_packets:0 in_flight:61 cwnd:77
 ```
