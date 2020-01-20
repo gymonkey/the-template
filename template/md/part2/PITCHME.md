@@ -36,17 +36,6 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 - 尽量保证请求和响应贴近传输时间
 - 观察当时发送时的带宽
 
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[TCP在长肥网络下的传输]
-
-@snap[north text-white span-100]
-@size[1.5em](排查过程)
-@snapend
-
-@snap[span-100]
-大杀器1: strace
-@snapend
-
 +++?
 ### 测试结果
 +++?i
