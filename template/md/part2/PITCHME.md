@@ -20,11 +20,9 @@
 @size[1.5em](测试的拓扑结构)
 @snapend
 
-@snap[span-100]
 ```
     ALI_BJ   <-- 公网（100Mb/s，几乎没有丢包，rtt：80ms）--->    ALI_SG
 ```
-@snapend
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[TCP在长肥网络下的传输]
@@ -33,7 +31,6 @@
 @size[1.5em](测试场景)
 @snapend
 
-### 测试场景
 - 使用netty实现一个简单的echo-server和echo-client
 - 拥塞算法使用cubic
 - 尽量保证请求和响应贴近传输时间
