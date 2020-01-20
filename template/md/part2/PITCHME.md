@@ -37,7 +37,7 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 - 观察当时发送时的带宽
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
+@title[TCP在长肥网络下的传输]
 
 @snap[north text-white span-100]
 @size[1.5em](排查过程)
@@ -47,27 +47,7 @@ ALI_BJ <--（100Mb/s，几乎没有丢包，rtt：80ms）-->ALI_SG
 大杀器1: strace
 @snapend
 
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
-
-@snap[north text-white span-100]
-@size[1.5em](排查过程)
-@snapend
-
-@snap[span-100]
-玄学
-@snapend
-
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
-
-@snap[north text-white span-100]
-@size[1.5em](排查过程)
-@snapend
-
-@snap[span-100]
-怀疑是直接操作内存有关系，查看zbx，发现启动或者切流量的时候，<br>
-都会有占用内存暴增的情况，继续阅读dubbo源代码，发现dubbo会直接使用池化的堆外内存，<br>
-会导致进程预先申请大块内存，改成使用非池化的堆内内存，有效缓解了这种情况
-@snapend
-
++++?
+### 测试结果
++++?i
+![](https://s2.ax1x.com/2020/01/16/lvWqNn.png)
