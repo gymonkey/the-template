@@ -1,20 +1,18 @@
-@title[超长的STW]
+@title[TCP在长肥网络下的传输]
 
-## @color[black](超长的STW)
+## @color[black](TCP在长肥网络下的传输)
 
 @fa[arrow-down text-black]
 
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[超长的STW]
+@title[TCP在长肥网络下的传输]
 
 @snap[north text-white span-100]
-@size[1.5em](现象)
+@size[1.5em](一张网上流传的图)
 @snapend
 
 @snap[span-100]
-重启某些量比较大的appserver时总会出现调用超时的情况
-@snapend
-
+![](https://s2.ax1x.com/2020/01/16/lvyKfS.png)@snapend
 +++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
 @title[超长的STW]
 
