@@ -109,7 +109,7 @@ channel.writeAndFlush().addListener(ChannelFutureListener() {
 +++?
 ### 结论
 
-+++？
++++?
 
 证实是发送缓冲区满了导致没有数据写入，为什么是会没有新的空位腾出来，<br>
 因为这里面的数据需要接受到对端的ack后才能被释放掉，rtt越大，这里面的空间释放的速度就越慢，<br>
