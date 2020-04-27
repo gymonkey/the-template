@@ -1,23 +1,52 @@
-@title[后续的开发工作]
+@title[另一种思路-避免长肥网络的出现]
 
-## @color[black](后续的开发工作)
+## @color[black](另一种思路-避免长肥网络的出现)
 
 @fa[arrow-down text-black]
 
 
-+++?image=template/img/bg/orange.jpg&position=top&size=100% 20%
-@title[Header Bar + Image Body]
++++?
 
-@snap[north text-white span-100]
-@size[1.5em](后续的开发工作)
-@snapend
+```
+Aly-Bj-quic01 <----- rtt:167ms,丢包率：20% ------> Aly-FU-quic01
+```
 
-@snap[south span-100]
-@ol[bullet-green](false)
-- 兼容k8s容器化改造
-- 做减法，减少现在用作兼容改造扩展点
-- 补充完善更多的testcase，方便后续的dubbo核心升级
-- 开放更多的扩展点
-@olend
-<br><br>
-@snapend
++++?
+
+### 测试场景
+- 使用netty实现一个简单的echo-client和echo-server
+- 拥塞算法使用cubic
+- 尽量保证请求和响应贴近传输时间
+- 观察当时发送时的带宽
+
++++?
+
+![](https://s2.ax1x.com/2020/02/12/1HxnF1.png) 
+
++++?
+
+```
+Aly-Bj-quic01 <--------> Aly-SG-quic01 <------------> Aly-FU-quic01 
+```
+
++++?
+
+### 测试场景
+- 使用netty实现一个简单的echo-client、echo-server和一个中继节点
+- 拥塞算法使用cubic
+- 尽量保证请求和响应贴近传输时间
+- 观察当时发送时的带宽
+
++++?
+
+![](https://s2.ax1x.com/2020/02/12/1Hs0MQ.png)
+
++++?
+
+### 我们身边有应用吗？
+
++++?
+
+CDN
+<br>
+ANYCAST
