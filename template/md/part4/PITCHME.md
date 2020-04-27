@@ -26,7 +26,7 @@ Aly-Bj-quic01 <----- rtt:167ms,丢包率：20% ------> Aly-FU-quic01
 +++?
 
 ```
-Aly-Bj-quic01 <--------> Aly-SG-quic01 <------------> Aly-FU-quic01 
+Aly-Bj-quic01 <-----> Aly-SG-quic01 <------> Aly-FU-quic01 
 ```
 
 +++?
@@ -50,3 +50,7 @@ Aly-Bj-quic01 <--------> Aly-SG-quic01 <------------> Aly-FU-quic01
 CDN
 <br>
 ANYCAST
+<br>
+各种各样的就近接入
+<br>
+一些厂商的内部传输网络
