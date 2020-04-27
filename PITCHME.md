@@ -16,6 +16,7 @@
 1. 什么是长肥网络 
 2. TCP在长肥网络下的传输
 3. 一种可能的替代-KCP协议 
+4. 另一种思路-避免长肥网络的出现
 1. Q&A
 <br><br>
 
@@ -25,6 +26,8 @@
 ---?include=template/md/part2/PITCHME.md
 
 ---?include=template/md/part3/PITCHME.md
+
+---?include=template/md/part4/PITCHME.md
 
 ---?image=template/img/bg/b1.png
 @snap[headline text-white span-70]
