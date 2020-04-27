@@ -150,7 +150,7 @@ channel.writeAndFlush().addListener(ChannelFutureListener() {
  
 ![](https://coolshell.cn/wp-content/uploads/2014/05/tcp.fr_-900x315.jpg)
 
-+++？
++++?
 
 **拥塞控制窗口的恢复速度收到rtt的影响，长肥网络下高rtt会导致了发送速度恢复很慢，一旦丢包影响很大，所谓辛辛苦苦三十年，一夜回到解放前**
 
